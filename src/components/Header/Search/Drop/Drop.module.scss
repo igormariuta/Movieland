@@ -1,0 +1,116 @@
+.row {
+  background: rgba(255, 255, 255, .05);
+  padding: 0;
+}
+
+.link {
+  overflow: hidden;
+  display: block;
+  padding: 0.75rem calc(0.75rem + 10px) 0.75rem 0.75rem;
+  transition: background .3s ease;
+
+  &:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, .07);
+  }
+}
+
+.poster {
+  display: block;
+  position: relative;
+  padding-bottom: 150%;
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Title
+
+.title {
+  font-weight: 600;
+}
+
+.rating {
+  small {
+    font-weight: 600;
+  }
+}
+
+// Info
+
+.calendar {
+  small {
+    font-weight: 600;
+  }
+}
+
+// 
+
+
+.buttons {
+  position: absolute;
+  top: -1px;
+  right: 0.75rem;
+  // left: 15px;
+  height: 30px;
+  // background: black;
+  
+  border-top-right-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+
+}  
+
+.person {
+  width: 50px;
+  margin-left: 5px;
+}
+
+.personLink {
+  display: block;
+  position: relative;
+  padding-bottom: 150%;
+  transition: opacity .3s ease;
+
+  &:hover {
+    opacity: .5;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+  
+
+@media (max-width: 768px) {
+
+  .colLeft {
+    flex: 0 0 75px;
+    max-width: 75px;
+    min-width: 75px;
+  }
+
+  .colRight {
+    flex: 0 0 calc(100% - 75px);
+    max-width: calc(100% - 75px);
+  }
+
+  .colPosters {
+    display: none !important;
+  }
+
+}

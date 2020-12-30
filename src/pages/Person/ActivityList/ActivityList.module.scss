@@ -1,0 +1,18 @@
+.list {
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+  min-height: 50px;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+.listTitle {
+  background: rgba(255, 255, 255, .05);
+  padding: 10px 15px;
+  transition: background .3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, .03);
+  }
+}

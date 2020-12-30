@@ -1,0 +1,14 @@
+.posterContainer {
+  img {
+    position: sticky;
+    top: calc(1.5rem + 56px);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .posterContainer {
+    margin-bottom: 1.5rem;
+  }
+
+}

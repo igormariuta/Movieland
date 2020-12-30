@@ -1,0 +1,21 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+.navbarNav {
+  flex-direction: row;
+}
+
+@media (max-width: 576px) {
+
+  .navbarNav {
+    margin-bottom: 15px;
+  }
+
+}

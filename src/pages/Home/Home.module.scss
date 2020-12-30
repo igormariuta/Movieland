@@ -1,0 +1,21 @@
+.carousel .carousel-inner{
+  border-radius: 5px;
+}
+
+.caption {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 15%;
+
+  a {
+    color: inherit;
+  }
+}
+
+.overview {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

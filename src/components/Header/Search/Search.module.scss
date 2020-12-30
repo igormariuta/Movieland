@@ -1,0 +1,48 @@
+.search {
+  position: relative;
+  width: 500px;
+}
+
+.form, .input {
+  width: 100%;
+}
+
+.results {
+  position: absolute !important;
+  background: #343a40;
+  left: 0;
+  top: calc(100% + 12px);
+  right: 0;
+  min-height: 106px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 0.25rem;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+
+
+
+}
+
+@media (max-width: 992px) {
+
+  // .search {
+  //   position: relative;
+  //   width: 500px;
+  // }
+  
+}
+
+@media (max-width: 768px) {
+
+  .search {
+    width: 100%;
+  }
+}

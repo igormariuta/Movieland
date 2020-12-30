@@ -1,0 +1,29 @@
+.infoLine {
+  background: rgba(255, 255, 255, .05);
+  overflow: hidden;
+}
+
+.authors {
+  align-items: center;
+}
+
+small {
+  font-weight: 500;  
+}
+
+@media (max-width: 768px) {
+
+  // .infoLine, 
+  // .authors {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  // }
+
+}
+
+@media (max-width: 567px) {
+  .infoLine {
+    background: transparent;
+    padding: 0 !important;
+  }
+}
