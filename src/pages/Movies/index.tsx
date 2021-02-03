@@ -29,7 +29,7 @@ const MoviesPage = () => {
   const { filter, page } = useMemo(() => {
 
     let params = new URLSearchParams(search)!;
-    let filter = params.get('filter') ? params.get('filter')! : 'popular';
+    let filter = params.get('filter') ? params.get('filter')! : 'now_playing';
     let page = params.get('page') ? +params.get('page')! : 1;
     return { filter, page }
 

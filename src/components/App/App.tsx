@@ -26,6 +26,7 @@ const App = () =>  {
             '/movies/:id/recommend', 
             '/movies/:id/cast', 
             '/movies/:id/reviews', 
+            '/tv',
             '/tv/:id',
             '/people', 
             '/people/:id', 

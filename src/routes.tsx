@@ -5,6 +5,7 @@ import MyListPage from './pages/MyList';
 import PeoplePage from './pages/People';
 import PersonPage from './pages/Person';
 import TvPage from './pages/Tv';
+import TvsPage from './pages/Tvs';
 
 export const routes = [
   {
@@ -28,13 +29,13 @@ export const routes = [
     showInNav: false,
     component: MoviePage
   },
-  // {
-  //   title: 'TV Shows', 
-  //   path: '/tv', 
-  //   exact: true,
-  //   showInNav: false,
-  //   component: TvPage
-  // },
+  {
+    title: 'TV Shows', 
+    path: '/tv', 
+    exact: true,
+    showInNav: true,
+    component: TvsPage
+  },
   {
     title: 'TV Show', 
     path: '/tv/:id', 
@@ -46,7 +47,7 @@ export const routes = [
     title: 'People', 
     path: '/people', 
     exact: true,
-    showInNav: false,
+    showInNav: true,
     component: PeoplePage
   },
   {

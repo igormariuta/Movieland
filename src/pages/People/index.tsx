@@ -14,10 +14,7 @@ const PeoplePage = () => {
     <LayoutMain>
 
       <div className="text-white mb-3">
-        <h4>In Development</h4>
-        <p>
-          <Link className='p-0 text-primary' to='/movies'>Go to Movies</Link>
-        </p>
+        <p className='text-primary'>In Development</p>
       </div>
 
     </LayoutMain>

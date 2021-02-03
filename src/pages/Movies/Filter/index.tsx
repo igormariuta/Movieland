@@ -5,7 +5,6 @@ import s from './Filter.module.scss';
 
 import { GridFill, FunnelFill } from 'react-bootstrap-icons';
 import { Dropdown } from 'react-bootstrap';
-import { FILTERS } from '../../../config/config';
 import { IQuery } from '../../../types/interfaces';
 import { useHistory, useLocation, useParams } from 'react-router-dom';
 
@@ -16,12 +15,22 @@ interface IProps {
   changeFilter: (filter: string) => void
 }
 
+interface IMoviesFilter {
+  [n: string]: string
+}
+
+const FILTERS: IMoviesFilter = {
+  'Now Playing': 'now_playing',
+  'Popular': 'popular',
+  'Top Rated': 'top_rated',
+}
+
 const DiscoverFilter: React.FC<IProps> = ({gridView, changeView, filter, changeFilter}) => {
 
   return (
     <div className={cn("row no-gutters justify-content-between align-items-center mb-4", s.filterBar)}>
 
-      <div className="row no-gutters ">
+      <div className="row no-gutters">
 
         { 
           <Dropdown>

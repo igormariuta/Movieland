@@ -12,10 +12,18 @@
   flex-direction: row;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
   .navbarNav {
     margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .navLink {
+    margin-right: 10px;
   }
 
 }

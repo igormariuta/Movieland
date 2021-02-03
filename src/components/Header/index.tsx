@@ -19,7 +19,7 @@ const Header = () => {
   return (
     
     <header className={cn("navbar navbar-expand-sm navbar-dark bg-dark sticky-top", s.navbar)}>
-      <div className="container">
+      <div className="container" style={{flexWrap: 'wrap'}}>
 
         <nav className={cn('navbar-nav', s.navbarNav)}>
           <Link className={cn(s.logoContainer, 'mr-4')} to="/">
@@ -29,14 +29,14 @@ const Header = () => {
             routes.map(({title, path, exact, showInNav}) => 
               showInNav ? (
                 <li key={title} className="nav-item mr-1">
-                  <NavLink to={path} exact={exact} className="nav-link">{title}</NavLink>
+                  <NavLink to={path} exact={exact} className={cn("nav-link", s.navLink)}>{title}</NavLink>
                 </li>
               ) : null
             )
           }
         </nav>
        
-        <div className="userMenu navbar-nav align-items-center justify-content-end col-12 col-sm-7 p-0">
+        <div className="userMenu navbar-nav align-items-center justify-content-end col-12 col-md-7 p-0">
           
           <Search />
 

@@ -36,9 +36,7 @@ const TvPage = () =>  {
         isLoading ? <Loading /> : 
         data ? (
           <>
-
             <Main data={data}/>
-
           </>
         ) : null
       }
