@@ -8,16 +8,16 @@ import TvPage from "./pages/Tv";
 import TvsPage from "./pages/Tvs";
 
 export const routes = [
-  {
-    title: "Home",
-    path: "/",
-    exact: true,
-    showInNav: false,
-    component: HomePage,
-  },
+  // {
+  //   title: "Home",
+  //   path: "/",
+  //   exact: true,
+  //   showInNav: false,
+  //   component: HomePage,
+  // },
   {
     title: "Movies",
-    path: "/movies",
+    path: "/",
     exact: true,
     showInNav: true,
     component: MoviesPage,
