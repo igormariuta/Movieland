@@ -1,69 +1,69 @@
-import HomePage from './pages/Home';
-import MoviePage from './pages/Movie';
-import MoviesPage from './pages/Movies';
-import MyListPage from './pages/MyList';
-import PeoplePage from './pages/People';
-import PersonPage from './pages/Person';
-import TvPage from './pages/Tv';
-import TvsPage from './pages/Tvs';
+import HomePage from "./pages/Home";
+import MoviePage from "./pages/Movie";
+import MoviesPage from "./pages/Movies";
+import MyListPage from "./pages/MyList";
+import PeoplePage from "./pages/People";
+import PersonPage from "./pages/Person";
+import TvPage from "./pages/Tv";
+import TvsPage from "./pages/Tvs";
 
 export const routes = [
   {
-    title: 'Home', 
-    path: '/', 
+    title: "Home",
+    path: "/",
     exact: true,
     showInNav: false,
-    component: HomePage
-  }, 
-  {
-    title: 'Movies', 
-    path: '/movies', 
-    exact: true,
-    showInNav: true,
-    component: MoviesPage
+    component: HomePage,
   },
   {
-    title: 'Movie', 
-    path: '/movies/:id', 
+    title: "Movies",
+    path: "/movies",
+    exact: true,
+    showInNav: true,
+    component: MoviesPage,
+  },
+  {
+    title: "Movie",
+    path: "/movies/:id",
     exact: false,
     showInNav: false,
-    component: MoviePage
+    component: MoviePage,
   },
   {
-    title: 'TV Shows', 
-    path: '/tv', 
+    title: "TV Shows",
+    path: "/tv",
     exact: true,
     showInNav: true,
-    component: TvsPage
+    component: TvsPage,
   },
   {
-    title: 'TV Show', 
-    path: '/tv/:id', 
+    title: "TV Show",
+    path: "/tv/:id",
     exact: true,
     showInNav: false,
-    component: TvPage
+    component: TvPage,
   },
   {
-    title: 'People', 
-    path: '/people', 
+    title: "People",
+    path: "/people",
     exact: true,
-    showInNav: true,
-    component: PeoplePage
+    showInNav: false,
+    component: PeoplePage,
   },
   {
-    title: 'People', 
-    path: '/people/:id', 
+    title: "People",
+    path: "/people/:id",
     exact: false,
     showInNav: false,
-    component: PersonPage
+    component: PersonPage,
   },
   {
-    title: 'MyList', 
-    path: '/my-list', 
+    title: "MyList",
+    path: "/my-list",
     exact: true,
     showInNav: false,
-    component: MyListPage
+    component: MyListPage,
   },
-]
-  
+];
+
 export default routes;
